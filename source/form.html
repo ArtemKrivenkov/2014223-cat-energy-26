@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Кэт Энерджи - Подбор программы</title>
+  </head>
+  <body>
+    <header class="pahes-header">
+        <a class="main-header__logo" href="#">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--active" href="#">главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">подбор программы</a>
+              </li>
+            </ul>
+        </nav>
+        </header>
+        <main class="form-container">
+            <section class="form-program-selection">
+                <h1 class="form-program-selection__title">Подбор программы</h1>
+                <p class="form-program-selection__description">Заполните анкету, и мы подберем
+                    программу питания для вашего кота</p>
+                <form class="form-program-selection__form" method="post" action="#">
+                        <label class="form-program-selection__label" for="form-pet-name">ИМЯ:*</label>
+                        <input class="field form-program-selection__field" type="text" name="form-pet-name" placeholder="барсик">
+                        <label class="form-program-selection__label" for="form-pet-weight">Вес (кг):*</label>
+                        <input class="field form-program-selection__field" type="text" name="form-pet-weight" placeholder="7">
+                        <label class="form-program-selection__label" for="form-pet-age">Возраст (лет):</label>
+                        <input class="field form-program-selection__field" type="text" name="form-pet-age" placeholder="7">
+                      </form>
+               <fieldset class="filter-power">
+                    <h3 class="filter-headline filter-power-headline">питание</h3>
+                        <ul class="filter-power-list">
+                            <li class="filter-power-item">
+                                <label class="radio-label">
+                                    <input class="visually-hidden radio" type="radio" name="rechargable" value="rechargable" checked>
+                                    <span class="radio-icon"></span>
+                                    <span class="radio-text">Аккумуляторные</span>
+                                </label>
+                            </li>
+                            <li class="filter-power-item">
+                                <label class="filter-label">
+                                    <input class="visually-hidden radio" type="radio" name="plugged" value="plugged">
+                                    <span class="radio-icon"></span>
+                                    <span class="radio-text">Сетевые</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+            </section>
+        </main>
+  </body>
+</html>
